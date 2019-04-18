@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    text-transform: uppercase;
+}
+  
+.background-image {
+    background: url('https://images.pexels.com/photos/702634/pexels-photo-702634.jpeg');
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+    margin-top: 1%;
+}
+
+.accordion {
+  width: 75%;
+  background: transparent;
+  
+}
+  
+.accordion-header {
+  color: #2a313a;
+  padding: 24px;
+  border: 2px solid black;
+  font-weight: 800;
+  font-size: 24px;
+}
+  
+.accordion-header:hover {
+  background: #F6F7F9;
+}
+  
+.accordion-content {
+  display: none;
+  color: #4a5666;
+  list-style: decimal;
+}
+  
+.accordion-header::before {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 12px;
+}
+  
+.active.accordion-header::before {
+    background-color: #FC6468;
+}
+  
+.tabset > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+  
+.tabset .tab-panel {
+    display: none;
+}
+  
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    display: block;
+}
+.tabset > label {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    border: 2px solid black;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 24px;
+    color: rgb(37, 71, 28);
+    margin-top: 5%;
+    
+}
+  
+.tabset > label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: white;
+}  
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 2px solid black;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #06c;
+}
+.tabset > input:checked + label {
+    border-color: #06c;
+    border-bottom: 2px solid #fff;
+    margin-bottom: -1px;
+}
+.site-info {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.site-info p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#js-form {
+    text-align: center;
+}  
+#js-form label{
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(24, 10, 143);
+}
+  
+#js-search-term {
+    padding: 10px;
+    border-radius: 0px;
+    border: black 1px solid;
+    font-size: 20px;
+  }
+#js-search-button {
+    padding: 10px;
+    border-radius: 0px;
+    border: black 1px solid;
+    font-size: 20px;
+}
+button, input[type="text"] {
+    padding: 5px;
+}
+  
+button:hover {
+    cursor: pointer;
+}  
+#video-list {
+    margin: auto;
+    width: 50%;
+}
+#similar-artists-list {
+    margin: auto;
+    width: 50%;
+}
+#search-history-list {
+    margin: auto;
+    width: 50%;
+}
+#video-list li {
+    list-style: decimal;
+    
+}
+#similar-artists-list li {
+    list-style: decimal;
+}
+  
+.container {
+    margin: 0 auto;
+}
+  
+#search-history-list li {
+    font-size: 20px;
+    font-weight: 800;
+}
+  
+.error-message {
+    color: red;
+}
+  
+.hidden {
+    display: none;
+}
+  
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .accordion {
+        width: 100%;
+        background: transparent;
+    }
+    #similar-artists-list {
+        margin: auto;
+        width: 75%;
+    }
+    #similar-artists-list li{
+        font-size: 20px;
+    }
+    #similar-artists-list img{
+        height: 250px;
+    }
+    #search-history-list {
+        margin: auto;
+        width: 50%; 
+    }
+    #search-history-list li {
+        font-size: 24px;
+    }
+    
+    #video-list li{
+        font-size: 20px;
+    }
+    #video-list img{
+        height: 250px;
+    }
+    
+
+}
+@media (min-width: 320px) and (max-width: 568px) {
+    .logo {
+        height: 75px;
+        width: 75px;
+        margin-top: 1%;
+    }
+   
+    .tabset > label {
+        position: relative;
+        display: inline-block;
+        padding: 10px 10px 10px;
+        border: 2px solid black;
+        border-bottom: 0;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        width:32%;
+    }
+    .tabset > label::after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        bottom: 2px;
+        width: 22px;
+        height: 4px;
+        background: white;
+    }
+    #results img {
+        height: auto;
+        width: 200px;
+    }
+    #results {
+        font-size: 12px;
+    }
+    #similar-artists-list {
+        font-size: 12px;
+        width:100%;
+          
+    }
+
+    #video-list {
+        margin: auto;
+        width: 100%;
+    }
+    #search-history-list {
+        margin: auto;
+        width: 100%;
+    }
+
+    #similar-artists-list img {
+        height: 200px;
+        width: 200px;
+    }
+    .accordion {
+        width: 80%;
+        background: transparent;
+    }
+        
+    .accordion-header {
+        color: #2a313a;
+        padding: 20px;
+        border: 2px solid black;
+        font-weight: 800;
+        font-size: 16px;
+
+      }
+        
+    .accordion-header:hover {
+        background: #F6F7F9;
+    }
+        
+    .accordion-content {
+        display: decimal;
+        color: #4a5666;
+        width: 100%;
+    }
+    #js-form label{
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        display: block;
+        padding-bottom: 5px;
+        color: rgb(24, 10, 143);
+    }    
+        
+        
+    #js-search-term {
+        padding: 10px;
+        border-radius: 0px;
+        border: black 1px solid;
+        font-size: 20px;
+        width: 50%;
+        
+    }
+    #js-search-button {
+        padding: 10px;
+        border-radius: 0px;
+        border: black 1px solid;
+        font-size: 20px;
+    }
+          
+    button, input[type="text"] {
+        padding: 5px;
+    }
+}
+  
