@@ -19,5 +19,5 @@
 
 ## Demo
 <ul>
-<li><a href="https://ahnelson34.github.io/Music-Researcher/" target="_blank">Live Demo</a></li>
+<li><a href="https://ahnelson34.github.io/Music-Researcher/">Live Demo</a></li>
 </ul>
