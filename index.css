@@ -145,7 +145,7 @@ body {
     border-radius: 0px;
     border: black 1px solid;
     font-size: 20px;
-  }
+}
 #js-search-button {
     padding: 10px;
     border-radius: 0px;
@@ -265,8 +265,7 @@ button:hover {
     }
     #similar-artists-list {
         font-size: 12px;
-        width:100%;
-          
+        width: 100%;     
     }
 
     #video-list {
@@ -294,7 +293,7 @@ button:hover {
         font-weight: 800;
         font-size: 16px;
 
-      }
+    }
         
     .accordion-header:hover {
         background: #F6F7F9;
