@@ -5,7 +5,7 @@
  Many times I've heard a new artist and want to know more about them. What are the most known songs? Who else should I listen that sounds like them?
  
 ## Summary
-This app allows users to search any band or artist and receive a list of their top videos to listen to. It also allows them to view similar artists and listen to their top songs. In order to keep track of their searches, there is also a search history. 
+This app allows users to search any band or artist and receive a list of their top tracks as music videos to listen to. It also allows them to view similar artists and listen to their top songs. In order to keep track of their searches, there is also a search history. 
 
 ## Screenshots
 Homepage:
