@@ -237,8 +237,8 @@ function watchForm() {
                   }
                   else {
                     $results.append(
-                      `<li><a href='https://www.youtube.com/watch?v=${responseJson.items[0].id.videoId}' target=_blank'><h3>${responseJson.items[0].snippet.title}</h3></a>
-                      <a href='https://www.youtube.com/watch?v=${responseJson.items[0].id.videoId}' target=_blank'>
+                      `<li><a href='https://www.youtube.com/watch?v=${responseJson.items[0].id.videoId}' target='_blank'><h3>${responseJson.items[0].snippet.title}</h3></a>
+                      <a href='https://www.youtube.com/watch?v=${responseJson.items[0].id.videoId}' target='_blank'>
                       <img src='${responseJson.items[0].snippet.thumbnails.medium.url}'></a>
                       </li>`
                       
